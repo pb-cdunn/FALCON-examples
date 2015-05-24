@@ -8,6 +8,9 @@ make run-ecoli
 ```
 We do not recommend piping the output, since if you need to stop early (with Ctrl-C aka KeyboardInterrupt), your program might be killed before it has time to `qdel` the outstanding jobs.
 
+# `*.fofn`
+These are "files of filenames". Since they are in the repo, they should be relative paths. WORKING ON THIS...
+
 # `data` directory
 The repo data is lightweight because it contains symlink instead of the contents of large files.
 
