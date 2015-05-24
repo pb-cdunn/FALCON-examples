@@ -5,8 +5,10 @@ ECOLI_FASTA:= \
 
 ecoli: ${ECOLI_FASTA}
 ecoli2: ecoli
+lambda: lambda-creads.fasta
 %.fasta:
 	${MAKE} -f git-sym.makefile $$(readlink $@)
+
 
 foo-test:
 	${MAKE} -f git-sym.makefile $$(readlink $@)
