@@ -1,5 +1,7 @@
-run: setup
-	echo fc_run.py fc_run.cfg
-setup:
-	${MAKE} -C data ecoli
-.PHONY: default run setup
+run-ecoli: setup-ecoli
+run-ecoli2: setup-ecoli
+run-%: setup-%
+	fc_run.py fc_run_$*.cfg
+setup-%:
+	${MAKE} -C data $*
+.PHONY: default run-% setup-%
