@@ -20,7 +20,7 @@ ${GIT_SYM_CACHE}/m140913_050931_42139_c100713652400000001823152404301535_s1_p0.3
 	cd $(dirname $@); wget -c https://www.dropbox.com/s/j61j2cvdxn4dx4g/m140913_050931_42139_c100713652400000001823152404301535_s1_p0.3.subreads.fasta
 
 ${GIT_SYM_CACHE}/lambda-creads.1.fasta: | ${GIT_SYM_CACHE}
-	cp -f /lustre/hpcprod/cdunn/data/lambda/cx.fasta $@
+	cp -f /lustre/hpcprod/cdunn/data/lambda/cx.pb.fasta $@
 
 setup-cache: | ${GIT_SYM_CACHE}
 
