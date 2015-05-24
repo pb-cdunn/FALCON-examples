@@ -4,6 +4,7 @@ ECOLI_FASTA:= \
 	ecoli.3.subreads.fasta
 
 ecoli: ${ECOLI_FASTA}
+ecoli2: ecoli
 %.fasta:
 	${MAKE} -f git-sym.makefile $$(readlink $@)
 
