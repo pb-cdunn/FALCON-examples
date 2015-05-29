@@ -6,5 +6,5 @@ FALCON_DIR?=../falcon
 FALCON_BIN?=${FALCON_DIR}/fc_env/bin
 
 run:
-%:
+%: | ${GIT_SYM_DIR}
 	 . ${FALCON_BIN}/activate; ${MAKE} -f makefile $@

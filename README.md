@@ -14,9 +14,9 @@ These are "files of filenames". Since they are in the repo, they should be relat
 # `data` directory
 The repo data is lightweight because it contains symlink instead of the contents of large files.
 
-Symlinks to the data are stored in `data/`. These should point into `../.git/git-sym/`, which contains more symlink to a cache directory, and `data/git-sym/makefile` should include a rule to produce files for those symlinks.
+Symlinks to the data are stored in `data/`. These should point into `../.git/git_sym/`, which contains more symlink to a cache directory, and `git_sym.makefile` should include a rule to produce files for those symlinks.
 
-# git-sym
+# [git-sym](https://github.com/cdunn2001/git-sym)
 
 This is an experimental system which might become a fully supported executable someday. It should be automatic for you.
 

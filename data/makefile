@@ -7,8 +7,7 @@ ecoli: ${ECOLI_FASTA}
 ecoli2: ecoli
 lambda: lambda-creads.fasta
 %.fasta:
-	${MAKE} -f git-sym.makefile $$(readlink $@)
-
+	git-sym update $@
 
 foo-test:
-	${MAKE} -f git-sym.makefile $$(readlink $@)
+	git-sym update $@
