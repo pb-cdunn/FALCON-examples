@@ -12,5 +12,5 @@ m140913_050931_42139_c100713652400000001823152404301535_s1_p0.3.subreads.fasta:
 	wget -c https://www.dropbox.com/s/j61j2cvdxn4dx4g/m140913_050931_42139_c100713652400000001823152404301535_s1_p0.3.subreads.fasta
 lambda-creads.1.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/lambda/cx.pb.fasta $@
-synth0.fasta:
-	cp -f /lustre/hpcprod/cdunn/data/synth0/cx.fasta $@
+synth0.pb.fasta:
+	cp -f /lustre/hpcprod/cdunn/data/synth0/cx.pb.fasta $@
