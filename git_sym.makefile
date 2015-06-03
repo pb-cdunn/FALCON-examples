@@ -1,5 +1,6 @@
 # Cache big-data files.
 # This is used by git-sym.
+# Paths here should be absolute, but targets should be just filenames, sans path.
 # Note: So-called order-only prerequisites can be useful.
 #   http://www.gnu.org/software/make/manual/make.html#Prerequisite-Types
 foo:
@@ -16,3 +17,5 @@ lambda-hgap-3.creads.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/lambda/hgap-3.corrected.fasta $@
 synth0.pb.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/synth0/cx.pb.fasta $@
+arab-creads.fasta:
+	cp -f /lustre/hpcprod/cdunn/data/arab_test/corrected.fasta $@

@@ -7,6 +7,7 @@ ecoli: ${ECOLI_FASTA}
 ecoli2: ecoli
 lambda: lambda-creads.fasta lambda-hgap-3.creads.fasta
 lambda-hgap: lambda-hgap-3.creads.fasta
+arab: arab-creads.fasta
 %.fasta:
 	git-sym update $@
 
