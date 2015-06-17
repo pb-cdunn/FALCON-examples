@@ -1,30 +1,21 @@
 # FALCON-examples
 Examples, with test-cases, and a useful place for testing
 
-To run, first build FALCON and its dependencies. In your environment, set FALCON_BIN to your **virtualenv** bin. Then `make run-EXAMPLE`.
+To run, first build FALCON and its dependencies, and set-up your environment. (See FALCON-integrate in GitHub.) Then:
 ```
-export FALCON_BIN=`pwd`/../FALCON/fc_env/bin
 make run-ecoli
 ```
 We do not recommend piping the output, since if you need to stop early (with Ctrl-C aka KeyboardInterrupt), your program might be killed before it has time to `qdel` the outstanding jobs.
 
-# `*.fofn`
-These are "files of filenames". Since they are in the repo, they should be relative paths. WORKING ON THIS...
+# Data
+## `*.fofn`
+These are "files of filenames". Since they are in the repo, they should be relative paths. (Relative to their own location.)
 
-# `data` directory
-The repo data is lightweight because it contains symlink instead of the contents of large files.
+## Files
+The repo source is lightweight because it contains symlinks instead of the contents of large files. These are managed by **git-sym**.
 
-Symlinks to the data are stored in `data/`. These should point into `../.git/git_sym/`, which contains more symlink to a cache directory, and `git_sym.makefile` should include a rule to produce files for those symlinks.
+## [git-sym](https://github.com/cdunn2001/git-sym)
+This separates big-file caching from revision-control. There are several alternatives:
 
-# [git-sym](https://github.com/cdunn2001/git-sym)
-
-This is an experimental system which might become a fully supported executable someday. It should be automatic for you.
-
-Its purpose is to separate big-file caching from revision-control. There are several alternatives:
-
-* https://github.com/jedbrown/git-fat
-* https://github.com/schacon/git-media
-* http://git-annex.branchable.com/
-* https://github.com/github/git-lfs
-
-But all those impose the penalty of checksums on the large files. We assert that the large files can be uniquely derived from URLs, versioned in S3 or by filename, etc. We store only symlinks in the git repo.
+# `data` directories
+Relying on **git-sym**, symlinks to the data are stored in `data/` sub-directories. The files should point (relatively) into `.git_sym/`, which contains more symlinks to a cache directory. `git_sym.makefile` should include a rule to produce files for those symlinks.

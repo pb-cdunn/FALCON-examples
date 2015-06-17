@@ -1,9 +1,8 @@
-run-ecoli: setup-ecoli
-run-ecoli2: setup-ecoli
-run-lambda: setup-lambda
-run-%: #setup-%
-	fc_run.py fc_run_$*.cfg logging.ini
+default:
+	@echo 'Try "make run-foo" for any sub-dir of run/.'
+run-%: setup-%
+	cd run/$*; fc_run.py fc_run.cfg logging.ini
 setup-%:
-	${MAKE} -C data $*
+	git-sym update run/$*
 
-.PHONY: default run-% setup-%
+.PHONY: default
