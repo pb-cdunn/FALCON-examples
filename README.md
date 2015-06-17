@@ -9,7 +9,7 @@ We do not recommend piping the output, since if you need to stop early (with Ctr
 
 # Data
 ## `*.fofn`
-These are "files of filenames". Since they are in the repo, they should be relative paths. (Relative to their own location.)
+These are "files of filenames". Since they are in the repo, they should be relative paths. (Relative to the current directory when they are used. But that is wrong. It should be relative to their own location. TODO)
 
 ## Files
 The repo source is lightweight because it contains symlinks instead of the contents of large files. These are managed by **git-sym**.
