@@ -1,5 +1,5 @@
-/0-rawreads/
-/1-preads_ovl/
-/2-asm-falcon/
-/sge_log/
-/*.log
+0-rawreads/
+1-preads_ovl/
+2-asm-falcon/
+sge_log/
+*.log
