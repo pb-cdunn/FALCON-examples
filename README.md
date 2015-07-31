@@ -7,6 +7,9 @@ make run-ecoli
 ```
 We do not recommend piping the output, since if you need to stop early (with Ctrl-C aka KeyboardInterrupt), your program might be killed before it has time to `qdel` the outstanding jobs.
 
+## Environment
+One way to set-up your environment is to use Python **virtualenv**. Before running these examples, activate your virtualenv in your shell or via FALCON-integrate.
+
 # Data
 ## `*.fofn`
 These are "files of filenames". Since they are in the repo, they should be relative paths. (Relative to the current directory when they are used. But that is wrong. It should be relative to their own location. TODO)
