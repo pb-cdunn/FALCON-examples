@@ -4,4 +4,4 @@
 test:
 	./check.py
 clean:
-        \rm -rf 0-*/ 1-*/ 2-*/ *.log
+	\rm -rf 0-*/ 1-*/ 2-*/ *.log
