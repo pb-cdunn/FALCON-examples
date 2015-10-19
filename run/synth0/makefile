@@ -3,3 +3,5 @@
 # and maybe with reverse-complement.
 test:
 	./check.py
+clean:
+        \rm -rf 0-*/ 1-*/ 2-*/ *.log
