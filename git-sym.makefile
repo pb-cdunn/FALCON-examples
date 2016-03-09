@@ -16,7 +16,7 @@ lambda-creads.1.fasta:
 lambda-hgap-3.creads.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/lambda/hgap-3.corrected.fasta $@
 synth0.pb.fasta:
-	wget https://www.dropbox.com/s/a80t8ll29gvt883/cx.pb.fasta.gz | zcat > $@
+	wget -O - https://www.dropbox.com/s/a80t8ll29gvt883/cx.pb.fasta.gz | zcat > $@
 	#cp -f /lustre/hpcprod/cdunn/data/synth0/cx.pb.fasta $@
 synth0-circ-20.pb.fasta:
 	wget -O - https://www.dropbox.com/s/bjhcvp05u46o2qy/circ-20.pb.fasta.gz | zcat > $@
