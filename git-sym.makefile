@@ -16,16 +16,13 @@ lambda-creads.1.fasta:
 lambda-hgap-3.creads.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/lambda/hgap-3.corrected.fasta $@
 synth0.pb.fasta:
-	wget https://www.dropbox.com/s/a80t8ll29gvt883/cx.pb.fasta.gz
-	gunzip -c cx.pb.fasta.gz >| $@
+	wget -O - https://www.dropbox.com/s/a80t8ll29gvt883/cx.pb.fasta.gz | zcat > $@
 	#cp -f /lustre/hpcprod/cdunn/data/synth0/cx.pb.fasta $@
 synth0-circ-20.pb.fasta:
-	wget https://www.dropbox.com/s/bjhcvp05u46o2qy/circ-20.pb.fasta.gz
-	gunzip -c circ-20.pb.fasta.gz >| $@
+	wget -O - https://www.dropbox.com/s/bjhcvp05u46o2qy/circ-20.pb.fasta.gz | zcat > $@
 	#cp -f /lustre/hpcprod/cdunn/data/synth0/circ-20.pb.fasta $@
 synth0.ref.fasta:
-	wget https://www.dropbox.com/s/jz0m0n2a1b19xyd/from.fasta.gz
-	gunzip -c from.fasta.gz >| $@
+	wget -O - https://www.dropbox.com/s/jz0m0n2a1b19xyd/from.fasta.gz | zcat > $@
 	#cp -f /lustre/hpcprod/cdunn/data/synth0/from.fasta $@
 arab-creads.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/arab_test/corrected.fasta $@
