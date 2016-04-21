@@ -4,8 +4,8 @@
 go: run
 	${MAKE} test
 run:
-	fc_run fc_run.cfg logging.ini
+	fc_run1 fc_run.cfg logging.ini
 test:
 	./check.py
 clean:
-	\rm -rf 0-*/ 1-*/ 2-*/ *.log
+	\rm -rf 0-*/ 1-*/ 2-*/ *.log mypwatcher/
