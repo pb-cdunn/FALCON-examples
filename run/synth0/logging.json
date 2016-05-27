@@ -1,0 +1,31 @@
+{
+    "disable_existing_loggers": false,
+    "root": {
+        "level": "NOTSET",
+        "handlers": ["stream", "file_all"]
+    },
+    "formatters": {
+        "form01": {
+            "format": "[%(levelname)s\t%(asctime)s %(name)s:%(lineno)d]\n\t%(message)s"
+        },
+        "form02": {
+            "format": "%(message)s"
+        }
+    },
+    "handlers": {
+        "stream": {
+            "stream": "ext://sys.stdout",
+            "class": "logging.StreamHandler",
+            "formatter": "form02",
+            "level": "INFO"
+        },
+        "file_all": {
+            "filename": "all.log",
+            "mode": "w",
+            "class": "logging.FileHandler",
+            "formatter": "form01",
+            "level": "DEBUG"
+        }
+    },
+    "version": 1
+}

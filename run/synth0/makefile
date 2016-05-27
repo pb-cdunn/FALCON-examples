@@ -4,7 +4,7 @@
 go: run
 	${MAKE} test
 run:
-	fc_run fc_run.cfg logging.ini
+	fc_run fc_run.cfg logging.json
 go1: run1
 	${MAKE} test
 run1:
