@@ -12,8 +12,8 @@ test:
 	python -c 'import falcon_kit; print falcon_kit.falcon'
 	${MAKE} run-synth0
 	${MAKE} -C run/synth0 test
-	${MAKE} -C run/synth0 clean
-	${MAKE} -C run/synth0 go0 # still test the old pypeflow too, for now
+	#${MAKE} -C run/synth0 clean
+	#${MAKE} -C run/synth0 go0 # still test the old pypeflow too, for now
 	${MAKE} -C run/synth0 clean
 	${MAKE} -C run/synth0 go1 # should be the same as go
 
