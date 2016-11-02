@@ -29,3 +29,5 @@ synth0.ref.fasta:
 	#cp -f /lustre/hpcprod/cdunn/data/synth0/from.fasta $@
 arab-creads.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/arab_test/corrected.fasta $@
+synth5k.2016-11-02:
+	curl -L https://downloads.pacbcloud.com/public/data/git-sym/synth5k.2016-11-02.tgz | tar xvfz -
