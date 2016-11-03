@@ -32,7 +32,7 @@ def compare_circ(ref, qry):
         d = 'rc'
         shift = compare_rot(reverse_complement(ref), qry)
     print('shifted by %d (%s)' %(shift, d))
-def main(prog, ref='data/ref.fasta', qry='2-asm-falcon/p_ctg.fa'):
+def main(prog, ref='data/synth5k/ref.fasta', qry='2-asm-falcon/p_ctg.fa'):
     compare_circ(read_dna(open(ref)), read_dna(open(qry)))
 
 main(*sys.argv)
