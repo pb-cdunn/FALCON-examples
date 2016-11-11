@@ -8,12 +8,6 @@ foo:
 	# This is just for testing git-sym. Sorry for touching home dir.
 	-touch ~/foo
 	cp -f ~/foo $@
-m140913_050931_42139_c100713652400000001823152404301535_s1_p0.1.subreads.fasta:
-	curl -L https://www.dropbox.com/s/tb78i5i3nrvm6rg/m140913_050931_42139_c100713652400000001823152404301535_s1_p0.1.subreads.fasta > $@
-m140913_050931_42139_c100713652400000001823152404301535_s1_p0.2.subreads.fasta:
-	curl -L https://www.dropbox.com/s/v6wwpn40gedj470/m140913_050931_42139_c100713652400000001823152404301535_s1_p0.2.subreads.fasta > $@
-m140913_050931_42139_c100713652400000001823152404301535_s1_p0.3.subreads.fasta:
-	curl -L https://www.dropbox.com/s/j61j2cvdxn4dx4g/m140913_050931_42139_c100713652400000001823152404301535_s1_p0.3.subreads.fasta > $@
 lambda-creads.1.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/lambda/cx.pb.fasta $@
 lambda-hgap-3.creads.fasta:
@@ -31,3 +25,5 @@ arab-creads.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/arab_test/corrected.fasta $@
 synth5k.2016-11-02:
 	curl -L https://downloads.pacbcloud.com/public/data/git-sym/synth5k.2016-11-02.tgz | tar xvfz -
+ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0:
+	curl -L https://downloads.pacbcloud.com/public/data/git-sym/ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0.subreads.tar | tar xvf -
