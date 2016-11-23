@@ -5,14 +5,6 @@ go: run
 	${MAKE} test
 run:
 	fc_run fc_run.cfg logging.json
-go1: run1
-	${MAKE} test
-run1:
-	fc_run1 fc_run.cfg logging.ini
-go0: run0
-	${MAKE} test
-run0:
-	fc_run0 fc_run.cfg logging.ini
 test:
 	./check.py
 clean:
