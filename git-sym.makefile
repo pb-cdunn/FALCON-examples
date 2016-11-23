@@ -26,6 +26,6 @@ arab-creads.fasta:
 synth5k.2016-11-02:
 	curl -kL https://downloads.pacbcloud.com/public/data/git-sym/synth5k.2016-11-02.tgz | tar xvfz -
 ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0:
-	curl -kL https://downloads.pacbcloud.com/public/data/git-sym/ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0.subreads.tar | tar xvf -
-greg200k-sv2:
-	curl -kL https://downloads.pacbcloud.com/public/data/git-sym/greg200k-sv2.tar | tar xvf -
+	curl -L https://downloads.pacbcloud.com/public/data/git-sym/ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0.subreads.tar | tar xvf -
+greg200k-sv2.2:
+	curl -L https://downloads.pacbcloud.com/public/data/git-sym/greg200k-sv2.2.tar | tar xvf -
