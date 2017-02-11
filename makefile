@@ -1,7 +1,7 @@
 default:
 	@echo 'Try "make run-foo" for any sub-dir of run/.'
 run-%: setup-%
-	cd run/$*; fc_run.py fc_run.cfg logging.ini
+	cd run/$*; rm -rf 0-rawreads/ 1-preads_ovl/ 2-asm-falcon/; ls -l; fc_run.py fc_run.cfg logging.ini
 setup-%:
 	git-sym update run/$*
 	git-sym show run/$*
