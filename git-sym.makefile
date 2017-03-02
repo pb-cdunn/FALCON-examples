@@ -24,8 +24,8 @@ synth0.ref.fasta:
 arab-creads.fasta:
 	cp -f /lustre/hpcprod/cdunn/data/arab_test/corrected.fasta $@
 synth5k.2016-11-02:
-	curl -L https://downloads.pacbcloud.com/public/data/git-sym/synth5k.2016-11-02.tgz | tar xvfz -
+	curl -kL https://downloads.pacbcloud.com/public/data/git-sym/synth5k.2016-11-02.tgz | tar xvfz -
 ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0:
-	curl -L https://downloads.pacbcloud.com/public/data/git-sym/ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0.subreads.tar | tar xvf -
+	curl -kL https://downloads.pacbcloud.com/public/data/git-sym/ecoli.m140913_050931_42139_c100713652400000001823152404301535_s1_p0.subreads.tar | tar xvf -
 greg200k-sv2:
-	curl -L https://downloads.pacbcloud.com/public/data/git-sym/greg200k-sv2.tar | tar xvf -
+	curl -kL https://downloads.pacbcloud.com/public/data/git-sym/greg200k-sv2.tar | tar xvf -
