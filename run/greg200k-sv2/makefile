@@ -1,5 +1,5 @@
 falcon:
-	fc_run.py fc_run.cfg
+	fc_run fc_run.cfg
 unzip:
 	fc_unzip.py fc_unzip.cfg
 quiver:
