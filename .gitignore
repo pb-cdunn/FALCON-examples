@@ -1,5 +1,10 @@
 0-rawreads/
 1-preads_ovl/
 2-asm-falcon/
+3-unzip/
+4-quiver/
 sge_log/
+mypwatcher/
+tmp/
+*.bak/
 *.log
