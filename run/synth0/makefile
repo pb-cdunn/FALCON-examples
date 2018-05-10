@@ -10,4 +10,5 @@ run:
 test:
 	./check.py
 clean:
-	\rm -rf 0-*/ 1-*/ 2-*/ *.log mypwatcher/
+	\rm -f *.log mypwatcher/
+	\rm -rf 0-rawreads/* 1-preads_ovl/* 2-asm-falcon/*
