@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3.7
 import sys
 def read_dna(ifs):
     """Assume one contig.
@@ -32,7 +32,7 @@ def compare_circ(ref, qry):
         d = 'rc'
         shift = compare_rot(reverse_complement(ref), qry)
     print('shifted by %d (%s)' %(shift, d))
-def main(prog, ref='data/synth5k/ref.fasta', qry='2-asm-falcon/p_ctg.fa'):
+def main(prog, ref='data/synth5k/ref.fasta', qry='2-asm-falcon/p_ctg.fasta'):
     compare_circ(read_dna(open(ref)), read_dna(open(qry)))
 
 main(*sys.argv)

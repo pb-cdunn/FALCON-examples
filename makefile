@@ -8,8 +8,8 @@ setup-%:
 	git-sym check run/$*
 # Our only integration test, for now.
 test:
-	python -c 'import pypeflow.pwatcher_workflow; print pypeflow.pwatcher_workflow'
-	python -c 'import falcon_kit; print falcon_kit.falcon'
+	python3 -c 'import pypeflow.pwatcher_workflow; print(pypeflow.pwatcher_workflow)'
+	python3 -c 'import falcon_kit; print(falcon_kit.falcon)'
 	${MAKE} run-synth0
 	${MAKE} -C run/synth0 test
 
